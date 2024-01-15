@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Substitution Cipher Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to bottom right, #00ffff 0%, #ff66ff 71%);
+        }
+
+        form {
+            background-color: #ffffff38 !important;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1) !important;
+            width: 300px;
+            transition: all .5s cubic-bezier(.05, 1.06, .84, .87);
+            border: none;
+            box-sizing: border-box;
+            box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.4);
+            background: #ffffff50;
+        }
+
+        form:hover {
+            box-shadow: 0;
+            transform: scale(1.02);
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #04AA6D;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/process" method="post">
+        <label for="plaintext">Enter plaintext:</label>
+        <input type="text" name="plaintext" id="plaintext" required>
+
+        <label for="category_key">Enter category key:</label>
+        <input type="text" name="category_key" id="category_key" required>
+
+        <label for="numeric_key">Enter numeric key:</label>
+        <input type="number" name="numeric_key" id="numeric_key" required>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
